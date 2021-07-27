@@ -15,6 +15,7 @@ from datetime import datetime
 download_directory=r'C:\Users\YOUR_DIRECTORY_HERE'
 since_year=1993
 landing_pages=[]
+edgar.download_index(download_directory, since_year, skip_all_present_except_last=False)
 #loop through each file and pull out the landing pages
 for file in files:
     #read the current file
